@@ -17,14 +17,19 @@ function signUserUp(){
 }
 function success(response){
     console.log(response);
-    document.location.href="home.html";
     Cookies.set("Token", "grantAccess");
+    setTimeout(timeOut, 2000);
 }
 function failure(error){
     console.error(error);
     let head = document.getElementById('failResponse');
     head.innerText="Login is invalid";
     Cookies.set("noToken", "accessDenied")
-    document.location.href="home.html";
+    setTimeout(timeOut, 2000);
 }
 logInBtn.addEventListener("click", signUserUp);
+
+function timeOut (){
+    document.location.href="home.html";
+}
+

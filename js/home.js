@@ -21,8 +21,8 @@ else{
     let parentElement = document.getElementById('ifFail')
     parentElement.appendChild(newElement);
     let newBtn = document.createElement('button');
-    newBtn.innerText="Return to Login Page";
     let newTag = document.createElement('a');
+    newTag.innerText="Login Page";
     newTag.setAttribute( "href", "index.html");
     newBtn.append(newTag);
     parentElement.appendChild(newBtn);
