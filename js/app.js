@@ -37,6 +37,6 @@ let outBtn = document.getElementById('logout');
 
 function deleteToken(){
 Cookies.remove("Token");
-console.log("Deleted");
+Cookies.remove("noToken");
 }
 outBtn.addEventListener("click", deleteToken);
