@@ -7,18 +7,22 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
     <script src="js/app.js" defer ></script>
+
 </head>
 <body>
-    <h1>Login In</h1>
-    <form action="javascript:void(0)">
-        <label for="email">Email</label>
-        <input type="text" id="email">
-        <label for="password">Password</label>
-        <input type="text" name="password" id="password">
-        <input type="submit" id="login">
-        <button id="logout">Log Out</button>
-    </form>
-    <h3 id="failResponse"></h3>
+    <h1>Log In</h1>
+    <div id="User">
+        <form id="Form" action="javascript:void(0)">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password">
+            <input type="submit" id="login">
+            <button id="logout">Log Out</button>
+        </form>
+        <h3 id="failResponse"></h3>
+    </div>
 </body>
 </html>
