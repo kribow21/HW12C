@@ -33,3 +33,10 @@ function timeOut (){
     document.location.href="home.html";
 }
 
+let outBtn = document.getElementById('logout');
+
+function deleteToken(){
+Cookies.remove("Token");
+console.log("Deleted");
+}
+outBtn.addEventListener("click", deleteToken);
